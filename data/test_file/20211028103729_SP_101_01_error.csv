@@ -1,0 +1,2 @@
+serialNumber,bagId,trackingNumber,switchToNewTrackingNumber,eventCode,eventDesc,eventTime,eventCountry,eventState,eventCity,eventDistrict,eventPostCode,specialOperDesc,status,errorMsg
+8205c555-af72-4d5f-8c87-d7a2fd998147,,LT819436253NL,,1233,Handover Manifest Confirm,2021-10-13T07:21:00+0000,CN,,,,,,0,trackingNumber is invalid!

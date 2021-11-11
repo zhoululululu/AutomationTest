@@ -1,0 +1,32 @@
+serialNumber,bagId,trackingNumber,switchToNewTrackingNumber,eventCode,eventDesc,eventTime,eventCountry,eventState,eventCity,eventDistrict,eventPostCode,specialOperDesc,status,errorMsg
+0646913d-6e8b-4d1a-80d3-5b9d032ae660,,LT819437554NL,,2014,Item is at the freight carrier,2021-10-22T07:51:00+0000,SE,,,,,,0,trackingNumber is invalid!
+e0efed12-161e-4c91-8c11-5ed04f53aa2b,,LT819436899NL,,2014,Item is at the freight carrier,2021-10-22T07:51:00+0000,SE,,,,,,0,trackingNumber is invalid!
+b2d23b1d-9cef-4510-b1d5-ce1d0a6de89b,,LT819436868NL,,2014,Item is at the freight carrier,2021-10-22T07:51:00+0000,DK,,,,,,0,trackingNumber is invalid!
+59922003-d33f-4ec1-a84b-99fcd3dd8990,,LT819436409NL,,2014,Item is at the freight carrier,2021-10-22T07:51:00+0000,NL,,,,,,0,trackingNumber is invalid!
+3f7430de-9adc-4aaa-8703-0cdd458c42f1,,LT819436908NL,,2014,Item is at the freight carrier,2021-10-22T07:51:00+0000,NL,,,,,,0,trackingNumber is invalid!
+0bc21bb5-3a93-4216-a336-d773c9aec9aa,,LT819436911NL,,2014,Item is at the freight carrier,2021-10-22T07:51:00+0000,DK,,,,,,0,trackingNumber is invalid!
+d682e126-9d81-48f8-8f2b-e1a77fc71d7b,,LT819437571NL,,2014,Item is at the freight carrier,2021-10-22T07:51:00+0000,DK,,,,,,0,trackingNumber is invalid!
+ecc0a619-f025-4357-9378-d8d3e67455c4,,LT819438223NL,,2014,Item is at the freight carrier,2021-10-22T07:51:00+0000,SE,,,,,,0,trackingNumber is invalid!
+283fdd12-eecf-48e0-8da4-c5befadf6e80,,LT819437585NL,,2014,Item is at the freight carrier,2021-10-22T07:51:00+0000,NL,,,,,,0,trackingNumber is invalid!
+ae542f20-df62-4e79-b010-4cf1d8e39884,,LT819436372NL,,2014,Item is at the freight carrier,2021-10-22T07:51:00+0000,GR,,,,,,0,trackingNumber is invalid!
+ac98837b-ae22-4803-a54c-65b4228ee7d3,,LT819436390NL,,2014,Item is at the freight carrier,2021-10-22T07:51:00+0000,SE,,,,,,0,trackingNumber is invalid!
+3ded1973-f3cd-4302-aa29-784168505b3d,,LT819436426NL,,2014,Item is at the freight carrier,2021-10-22T07:51:00+0000,DK,,,,,,0,trackingNumber is invalid!
+7e0c7eac-828e-41c8-9878-071e117b56d3,,LT819436412NL,,2014,Item is at the freight carrier,2021-10-22T07:51:00+0000,NL,,,,,,0,trackingNumber is invalid!
+60e3cbef-8659-4deb-b3ae-c2ebd157fa01,,LT819436386NL,,2014,Item is at the freight carrier,2021-10-22T07:51:00+0000,GR,,,,,,0,trackingNumber is invalid!
+e3467de0-1923-4bbd-b275-b6bd70449e48,,LT819436854NL,,2014,Item is at the freight carrier,2021-10-22T07:51:00+0000,GR,,,,,,0,trackingNumber is invalid!
+1b63a3ad-a586-42e9-95e4-5e7564000189,,LT819436871NL,,2014,Item is at the freight carrier,2021-10-22T07:51:00+0000,NL,,,,,,0,trackingNumber is invalid!
+bf8a93f8-e5c2-41b2-a254-1ceb34217f94,,LT819436885NL,,2014,Item is at the freight carrier,2021-10-22T07:51:00+0000,SE,,,,,,0,trackingNumber is invalid!
+2bf92a29-a3d8-4298-a9aa-ac780c2ed009,,LT819438237NL,,2014,Item is at the freight carrier,2021-10-22T07:51:00+0000,GR,,,,,,0,trackingNumber is invalid!
+246d57a3-e360-4865-8118-dfd596242256,,LT819437568NL,,2014,Item is at the freight carrier,2021-10-22T07:51:00+0000,DK,,,,,,0,trackingNumber is invalid!
+c03f5353-d3f1-46ea-9f11-4f3330e3db14,,LT819438210NL,,2014,Item is at the freight carrier,2021-10-22T07:51:00+0000,GR,,,,,,0,trackingNumber is invalid!
+018a9fa9-3f24-443f-a00e-9aa652eb1b65,,LT819438254NL,,2014,Item is at the freight carrier,2021-10-22T07:51:00+0000,NL,,,,,,0,trackingNumber is invalid!
+0226548a-7bbd-4298-8ea7-6b269e8ebd3d,,LT819438245NL,,2014,Item is at the freight carrier,2021-10-22T07:51:00+0000,NL,,,,,,0,trackingNumber is invalid!
+6894eede-6db7-4125-b052-cb4bbdc4ee66,,LT819436386NL,,1233,Handover Manifest Confirm,2021-10-16T02:20:00+0000,CN,,,,,,0,trackingNumber is invalid!
+09d2af41-2b27-45e7-9787-e117cc5f8c88,,LT819436426NL,,1233,Handover Manifest Confirm,2021-10-16T02:20:00+0000,CN,,,,,,0,trackingNumber is invalid!
+7a1878da-d644-4670-a07c-1d5966d6d7ae,,LT819436390NL,,1233,Handover Manifest Confirm,2021-10-16T02:20:00+0000,CN,,,,,,0,trackingNumber is invalid!
+23e96ec8-0afa-46d3-a146-cab0110fe4da,,LT819436372NL,,1233,Handover Manifest Confirm,2021-10-16T02:20:00+0000,CN,,,,,,0,trackingNumber is invalid!
+fd20bfc7-30d4-4750-b0cd-a261c9b22971,,LT819436409NL,,1233,Handover Manifest Confirm,2021-10-16T02:20:00+0000,CN,,,,,,0,trackingNumber is invalid!
+30ff65f2-e8fb-4e3d-a317-d4d056c9e9f6,,LT819436871NL,,1233,Handover Manifest Confirm,2021-10-16T02:20:00+0000,CN,,,,,,0,trackingNumber is invalid!
+9d3cd1e4-45b7-47b4-b63c-19172d42d567,,LT819436412NL,,1233,Handover Manifest Confirm,2021-10-16T02:20:00+0000,CN,,,,,,0,trackingNumber is invalid!
+edc6898a-1cc0-4f65-9cd8-2b6f3273bb31,,LT819436854NL,,1233,Handover Manifest Confirm,2021-10-16T02:20:00+0000,CN,,,,,,0,trackingNumber is invalid!
+f466adad-5dc1-4a16-845e-f636bc43a38c,,LT819436899NL,,1233,Handover Manifest Confirm,2021-10-16T02:20:00+0000,CN,,,,,,0,trackingNumber is invalid!

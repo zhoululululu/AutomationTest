@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
-# @File  : email_tool.py
-# @Author: 周璐
-# @Date  : 2021/5/19 22:44
-# @Desc  :
-
+"""
+Created on 2021/5/19 22:44
+@File  : email_tool.py
+@author: zhoul
+@Desc  :
+"""
 
 import yagmail, os
 from commonfunc.log import Log

@@ -1,0 +1,14 @@
+serialNumber,bagId,trackingNumber,switchToNewTrackingNumber,eventCode,eventDesc,eventTime,eventCountry,eventState,eventCity,eventDistrict,eventPostCode,specialOperDesc,status,errorMsg
+00b65726-71ec-4531-9a8d-9d67b1ae0df8,,LT819436868NL,,1233,Handover Manifest Confirm,2021-10-16T02:20:00+0000,CN,,,,,,0,trackingNumber is invalid!
+e8409af8-8eba-416f-b72c-1bcf6b91798d,,LT819436911NL,,1233,Handover Manifest Confirm,2021-10-16T02:20:00+0000,CN,,,,,,0,trackingNumber is invalid!
+640bfac1-2291-4117-9fe0-6bd0c3e3ed5a,,LT819436885NL,,1233,Handover Manifest Confirm,2021-10-16T02:20:00+0000,CN,,,,,,0,trackingNumber is invalid!
+68403e15-a49f-4465-ba3f-4ef6f7c24943,,LT819437568NL,,1233,Handover Manifest Confirm,2021-10-16T02:20:00+0000,CN,,,,,,0,trackingNumber is invalid!
+6cf46397-d6cc-4fea-a9a7-692a0b001164,,LT819437585NL,,1233,Handover Manifest Confirm,2021-10-16T02:20:00+0000,CN,,,,,,0,trackingNumber is invalid!
+197a0227-7959-48c9-a985-1c78f9838573,,LT819437554NL,,1233,Handover Manifest Confirm,2021-10-16T02:20:00+0000,CN,,,,,,0,trackingNumber is invalid!
+d72e6c73-f92b-461b-a93d-1eb37daf6afa,,LT819436908NL,,1233,Handover Manifest Confirm,2021-10-16T02:20:00+0000,CN,,,,,,0,trackingNumber is invalid!
+af7af2ea-60c5-444f-8808-0ca3e5d8706e,,LT819438210NL,,1233,Handover Manifest Confirm,2021-10-16T02:20:00+0000,CN,,,,,,0,trackingNumber is invalid!
+58e51e96-a5b7-4340-843f-667be52a3d26,,LT819438237NL,,1233,Handover Manifest Confirm,2021-10-16T02:20:00+0000,CN,,,,,,0,trackingNumber is invalid!
+81a482e5-431f-4c4a-81c4-14d379320285,,LT819437571NL,,1233,Handover Manifest Confirm,2021-10-16T02:20:00+0000,CN,,,,,,0,trackingNumber is invalid!
+a7fa727a-bdb1-4b44-9b6f-99bc046d8d62,,LT819438254NL,,1233,Handover Manifest Confirm,2021-10-16T02:20:00+0000,CN,,,,,,0,trackingNumber is invalid!
+1845ba64-49e0-4de8-b575-7b117651c661,,LT819438245NL,,1233,Handover Manifest Confirm,2021-10-16T02:20:00+0000,CN,,,,,,0,trackingNumber is invalid!
+701dd8af-be50-4464-8f8c-c4481407991f,,LT819438223NL,,1233,Handover Manifest Confirm,2021-10-16T02:20:00+0000,CN,,,,,,0,trackingNumber is invalid!

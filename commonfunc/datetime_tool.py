@@ -1,25 +1,48 @@
 # -*- coding: utf-8 -*-
-# @File  : datetime_tool.py
-# @Author: 周璐
-# @Date  : 2021/5/19 22:59
-# @Desc  :
+"""
+Created on 2021/5/19 22:59
+@File  : datetime_tool.py
+@author: zhoul
+@Desc  :
+"""
 import time
 import datetime
 import calendar
+from datetime import date, timedelta
 
 
 class DateTimeTool:
     @classmethod
     def get_now_time(cls, time_format='%Y-%m-%d %H:%M:%S'):
         """
+        获取现在时间
         :param time_format:时间格式
         :return:获取特定时间格式的时间；默认格式为%Y-%m-%d %H:%M:%S，例如：2021-05-19 23:10:04
         """
         return datetime.datetime.now().strftime(time_format)
 
     @classmethod
+    def get_order_time(cls, time_format='%Y-%m-%dT%H:%M:%S+0800'):
+        """
+        获取现在时间
+        :param time_format:时间格式
+        :return:获取特定时间格式的时间；默认格式为%Y-%m-%d %H:%M:%S，例如：2021-06-28T11:55:31+0800
+        """
+        return datetime.datetime.now().strftime(time_format)
+
+    @classmethod
+    def get_after_day_time(cls, time_format='%Y-%m-%d %H:%M:%S'):
+        """
+        获取明天的时间
+        :param time_format:时间格式
+        :return:获取特定时间格式的时间；默认格式为%Y-%m-%d %H:%M:%S，例如：2021-05-19 23:10:04
+        """
+        return (datetime.datetime.now() + timedelta(days=1)).strftime(time_format)
+
+    @classmethod
     def get_now_date(cls, time_format='%Y-%m-%d'):
         """
+        获取当前日期
         :param time_format:日期格式
         :return:获取特定日期格式的日期；默认格式为%Y-%m-%d，例如：2021-05-19
         """
@@ -50,7 +73,7 @@ class DateTimeTool:
         return datetime.datetime.now().weekday() + 1
 
     @classmethod
-    def get_how_days_ago(cls, now_date_time, now_date_time_format='%Y-%m-%d %H:%M:%S', how_days_ago=0):
+    def get_how_days_after(cls, how_days_ago=0, now_date_time_format='%Y-%m-%d %H:%M:%S'):
         """
 
         :param now_date_time:
@@ -58,8 +81,8 @@ class DateTimeTool:
         :param how_days_ago:
         :return:
         """
-        now_date_time = datetime.datetime.strptime(now_date_time, now_date_time_format)
-        result_date_time = now_date_time - datetime.timedelta(days=how_days_ago)
+        now_date_time = datetime.datetime.strptime(cls.get_now_time(), now_date_time_format)
+        result_date_time = now_date_time + datetime.timedelta(days=how_days_ago)
         return result_date_time
 
     @classmethod
@@ -116,4 +139,4 @@ class DateTimeTool:
 
 
 if __name__ == '__main__':
-    print(DateTimeTool.get_week_day())
+    print(DateTimeTool.get_how_days_after(1))
