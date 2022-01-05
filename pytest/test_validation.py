@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*- 
 """
 Created on 2021/7/2 11:26 
-@File  : test_interface.py
+@File  : test_validation.py
 @author: zhoul
 @Desc  :
 """
-import json
 import os
 from commonfunc.file_manage import FileManage
 from commonfunc.datetime_tool import DateTimeTool
@@ -99,7 +98,13 @@ class TestValidation(object):
         数据导出
         :return:
         """
-        lulu_robot = WeChat()
+        # 生产巡检机器人
+        path1 = "/cgi-bin/webhook/send?key=2cff83bf-8d51-4d03-882f-09dffb6cf16d"
+        path2 = "/cgi-bin/webhook/upload_media?key=2cff83bf-8d51-4d03-882f-09dffb6cf16d&type=file"
+        # lulu机器人
+        # path1 = "/cgi-bin/webhook/send?key=474e9964-db83-4cc1-87b3-758be14da3e7"
+        # path2 = "/cgi-bin/webhook/upload_media?key=474e9964-db83-4cc1-87b3-758be14da3e7&type=file"
+        lulu_robot = WeChat(path1, path2)
         all_data_result = pandas.DataFrame(
             {"路向": self.all_file_list, "服务类型": self.all_service_list, "预期": self.all_exp_list,
              "是否符合预期": self.all_assert_list,
@@ -119,9 +124,25 @@ class TestValidation(object):
         data_result.to_excel(writer, sheet_name="错误数据")
         writer.save()
         beauty_format(error_file)
-        lulu_robot.send_message(self.env_desc, "validation", len(self.all_des_list),
-                                "{:.2%}""".format(
-                                    (len(self.all_des_list) - len(self.error_des_list)) / len(self.all_des_list)),
-                                (len(self.all_des_list) - len(self.error_des_list)), len(self.error_des_list),
-                                self.error_des_list, error_file)
+        data = {
+            "msgtype": "markdown",  # 消息类型，此时固定为markdown
+            "markdown": {
+                "content": "# **<%s>-巡检测试反馈**\n#### **请注意及时跟进！**\n"
+                           "> 接口名称：<font color=\"info\">%s</font> \n"
+                           "> 测试用例总数：<font color=\"info\">%s条</font>；测试用例通过率：<font color=\"info\">%s</font>\n"
+                           "> **--------------------运行详情--------------------**\n"
+                           "> **成功数：**<font color=\"info\">%s</font>\n**失败数：**<font color=\"red\">%s</font>\n" % (
+                               self.env_desc, "validation", len(self.all_des_list), "{:.2%}""".format(
+                                   (len(self.all_des_list) - len(self.error_des_list)) / len(self.all_des_list)),
+                               (len(self.all_des_list) - len(self.error_des_list)), len(self.error_des_list))}}
+        data[
+            "markdown"][
+            "content"] += "> **--------------------错误用例--------------------**\n" if len(
+            self.error_des_list) != 0 else "> **--------------------完美通过--------------------**\n"
+        for i in self.error_des_list:
+            error_record = "> **路向：**<font color=\"warning\">%s</font>\n" % i
+            data["markdown"]["content"] += error_record
+        data["markdown"]["content"] += "> ##### **具体测试结果详见以下文件**"
+        lulu_robot.send_message(data)
+        lulu_robot.send_file(error_file)
         self.all_num, self.error_num, self.success_num, self.skip_num = 0, 0, 0, 0

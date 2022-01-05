@@ -129,6 +129,48 @@ class RdcFlow:
         finally:
             return self.last_mile_tracking_number
 
+    def print_tracking_label(self):
+        """
+        打印小包标签
+        :return:
+        """
+        re_tracking_number, tracking_label_data = self.json_config.get_tracking_label_data()
+
+        response = RequestClient(self.urls["last_tracking_print"]).get_simple_request("post",
+                                                                                      tracking_label_data,
+                                                                                      headers=self.headers)
+        print_tracking_label_response = self.rdc_cursor.select_last_mile_label(re_tracking_number)
+        logger.info("打印小包订单 : %s" % re_tracking_number)
+        logger.info("打印小包标签入参 : %s" % tracking_label_data)
+        logger.info("打印小包标签出参 : %s" % response)
+        logger.info("小包标签 : %s" % print_tracking_label_response)
+        return print_tracking_label_response
+
+    def print_bag_label(self):
+        """
+        打印大包标签
+        :return:
+        """
+        re_tracking_number, print_bag_label_data = self.json_config.get_bag_label_data(self.bag_id)
+        response = RequestClient(self.urls["last_bag_print"]).get_simple_request("post",
+                                                                                 print_bag_label_data,
+                                                                                 headers=self.headers)
+        print_bag_label_response = self.rdc_cursor.select_last_bag_label(self.bag_id)
+        logger.info("打印大包订单 : %s" % self.bag_id)
+        logger.info("打印大包标签入参 : %s" % print_bag_label_data)
+        logger.info("打印大包标签出参 : %s" % response)
+        logger.info("大包标签 : %s" % print_bag_label_response)
+        return print_bag_label_response
+
+    def get_service_code(self):
+        """
+        打印大包标签
+        :return:
+        """
+        re_tracking_number, service_code = self.json_config.get_service_code()
+        logger.info("订单服务 : %s" % service_code)
+        return service_code
+
     def get_b_post(self):
         b_post = self.json_config.get_b_post_data(self.sortation_code)
         get_b_post_response = ""
@@ -170,10 +212,7 @@ class RdcFlow:
             logger.info("建包入参 : %s" % bu_bag_data)
             logger.info("建包结果 : %s" % bu_bag_response)
             # 收集bag_id信息啦,准备负重出库！
-            if self.sortation == "dg":
-                self.bag_id = bu_bag_response["data"]["bagId"]
-            else:
-                self.bag_id = bu_bag_response["data"]["bagId"]
+            self.bag_id = bu_bag_response["data"]["bagId"]
         except Exception as e:
             if bu_bag_response["errors"][0]["message"]:
                 self.bag_id = bu_bag_response["errors"][0]["message"]
@@ -267,7 +306,7 @@ def get_rdc_interface(order_type, data_list):
     else:
         for i in data_list:
             single_result["country"] = country_list[data_list.index(i)]
-            single_result["tracking_number"] = tracking_list[data_list.index(i)]
+            single_result["a_tracking_number"] = tracking_list[data_list.index(i)]
             rdc_flow = RdcFlow(env_list[data_list.index(i)], rdc_list[data_list.index(i)],
                                service_list[data_list.index(i)], country_list[data_list.index(i)],
                                battery_list[data_list.index(i)], tracking_list[data_list.index(i)],
@@ -281,27 +320,29 @@ def get_rdc_interface(order_type, data_list):
                     print("该订单需要打标")
                     rdc_flow.get_letter()
                 last_mile_tracking_number = rdc_flow.get_label(weight_list[data_list.index(i)])
-                single_result["last_mile_tracking_number"] = last_mile_tracking_number
+                single_result["a_last_mile_tracking_number"] = last_mile_tracking_number
                 last_tracking_list.append(last_mile_tracking_number)
                 time.sleep(1)
-                act_service_code, label = GetLabel(env_list[data_list.index(i)], rdc_list[data_list.index(i)],
-                                                   tracking_list[data_list.index(i)]).get_label()
                 bag_id = rdc_flow.bu_bag(weight_list[data_list.index(i)])
+                print_label = rdc_flow.print_tracking_label()
+                service_code = rdc_flow.get_service_code()
                 if bag_id != "error":
-                    single_result["bag_id"] = bag_id
+                    single_result["bag_no"] = bag_id
                     bag_list.append(bag_id)
+                    print_bag_label = rdc_flow.print_bag_label()
                     rdc_flow.real_weight(weight_list[data_list.index(i)])
                     rdc_flow.out_package()
                 else:
-                    single_result["bag_id"] = bag_id
+                    single_result["bag_no"] = bag_id
+                    print_bag_label = ["error"]
             else:
                 single_result["error"] = "订单同步失败，请检查订单"
                 logger.info("订单同步失败，请检查订单")
-
-            single_result["sdk_label"] = label
-            single_result["exp_service_code"] = service_code_list[data_list.index(i)]
-            single_result["act_service_code"] = act_service_code
-            single_result["assert"] = act_service_code == service_code_list[data_list.index(i)]
+            single_result["label_sdk"] = print_label
+            single_result["label_bag"] = print_bag_label
+            single_result["service_code_exp"] = service_code_list[data_list.index(i)]
+            single_result["service_code_real"] = service_code
+            single_result["service_code_result"] = service_code == service_code_list[data_list.index(i)]
 
             result.append(single_result)
             single_result = {}

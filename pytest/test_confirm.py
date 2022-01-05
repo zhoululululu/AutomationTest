@@ -5,7 +5,7 @@ Created on 2021/7/2 11:26
 @author: zhoul
 @Desc  :
 """
-
+import json
 import os
 from commonfunc.file_manage import FileManage
 from commonfunc.datetime_tool import DateTimeTool
@@ -22,7 +22,7 @@ rootPath = os.path.split(curPath)[0]
 
 class TestInterface(object):
     global file_name, all_data, test_case
-    file_name = rootPath + "\\data\\" + "mi\\mi-case-test1.xlsx"
+    file_name = rootPath + "\\data\\" + "jitu\\jitu-case.xlsx"
     all_data = FileManage.file_to_dict(file_name)
     test_case = all_data.get("case_manage").fillna("").values
 
@@ -58,44 +58,45 @@ class TestInterface(object):
         if work_status:
             [path, port, headers] = self.handle.get_relation_value(all_data, [path, port, header],
                                                                    ["path", "port", "header"])
-            json_value = self.handle.get_deal_params_with_desc(self.env, json_value,
-                                                               description)
-            print(json_value)
-    #         result = self.req.get_request(path, port, method, headers=headers,
-    #                                       params=self.handle.get_deal_params_with_desc(self.env, params, description),
-    #                                       json_value=self.handle.get_deal_params_with_desc(self.env, json_value,
-    #                                                                                        description),
-    #                                       data=self.handle.get_deal_params_with_desc(self.env, data, description),
-    #                                       file_key=file_key, file_value=request_file_name)
-    #         self.des_list.append(description)
-    #         self.data_list.append(self.handle.get_deal_params(self.env, json_value))
-    #         self.result_list.append(result)
-    #         if '"code":0' in result:
-    #             self.handle.update_tracking_num(
-    #                 self.handle.get_deal_params(self.env, json_value)["data"]["packageInfoList"][0][
-    #                     "trackingNumber"])
-    #         if "OR" in exp_data:
-    #             result_list = []
-    #             exp_data_list = exp_data.split("OR")
-    #             for i in exp_data_list:
-    #                 result_1, exp_value, act_value = AssertTool().compare_dict(result, exp_data, ignore_data,
-    #                                                                            check_data)
-    #                 result_list.append(result_1)
-    #             result = True if True in result_list else False
-    #         else:
-    #             result, exp_value, act_value = AssertTool().compare_dict(result, exp_data, ignore_data, check_data)
-    #         assert result
-    #         if collection_return_data != "":
-    #             pass
-    #
-    # def teardown_class(self):
-    #     """
-    #     数据导出
-    #     :return:
-    #     """
-    #     data_result = pandas.DataFrame(
-    #         {"description": self.des_list, "data": self.data_list, "result": self.result_list})
-    #     data_result.to_excel(
-    #         rootPath + "\\testresults\\resultfile\\" + str(
-    #             DateTimeTool.get_now_date()) + "result.xls")
-    #     # pass
+            final_json_value = self.handle.get_deal_params_with_desc(self.env, json_value,
+                                                                     description)
+            print(final_json_value)
+            print(type(final_json_value))
+            result = self.req.get_request(path, port, method, headers=headers,
+                                          params=self.handle.get_deal_params_with_desc(self.env, params, description),
+                                          json_value=final_json_value,
+                                          data=self.handle.get_deal_params_with_desc(self.env, data, description),
+                                          file_key=file_key, file_value=request_file_name)
+            self.des_list.append(description)
+            self.data_list.append(final_json_value)
+            self.result_list.append(result)
+            print(result)
+            if 'Successful' in str(result):
+                self.handle.update_tracking_num(
+                    final_json_value["data"]["packageInfoList"][0][
+                        "trackingNumber"])
+            if "OR" in exp_data:
+                result_list = []
+                exp_data_list = exp_data.split("OR")
+                for i in exp_data_list:
+                    result_1, exp_value, act_value = AssertTool().compare_dict(result, i, ignore_data,
+                                                                               check_data)
+                    result_list.append(result_1)
+                result = True if True in result_list else False
+            else:
+                result, exp_value, act_value = AssertTool().compare_dict(result, exp_data, ignore_data, check_data)
+            assert result
+            if collection_return_data != "":
+                pass
+
+    def teardown_class(self):
+        """
+        数据导出
+        :return:
+        """
+        data_result = pandas.DataFrame(
+            {"description": self.des_list, "data": self.data_list, "result": self.result_list})
+        data_result.to_excel(
+            rootPath + "\\testresults\\resultfile\\" + str(
+                DateTimeTool.get_now_time_stamp_with_second()) + "result.xls")
+        # pass

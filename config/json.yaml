@@ -24,24 +24,24 @@ ship_order: '{
             {
                 "trackingNumber": "%s",
                 "serviceId": "%s",
-                "packageTotalWeight":%.2f,
-                "packageLength": 10.0,
-                "packageWidth": 10.0,
-                "packageHeight": 10.0,
-                "insurancedValue": 2.0,
+                "packageTotalWeight":%s,
+                "packageLength": 10,
+                "packageWidth": 10,
+                "packageHeight": 10,
+                "insurancedValue": 2,
                 "currency": "%s",
                 "itemInfoList": [
                     {
                         "sku": "1623996116735",
                         "skuDescCn": "%s",
                         "skuDesc": "%s",
-                        "skuWeight": 100.0,
-                        "skuValue": %.2f,
+                        "skuWeight": 100,
+                        "skuValue": %s,
                         "currency": "%s",
                         "transactionId": "1623996116735-1623996116735",
                         "quantity": 1,
                         "link": "http://www.ebay.com/itm/1623996116735",
-                        "txnUnitPrice":  %.2f,
+                        "txnUnitPrice":  %s,
                         "txnQty": 1,
                         "skuListingDesc": "Tissue paper"
                     }
@@ -174,6 +174,30 @@ out_package: '{
   "messageId": "1620962743000",
   "timestamp": "%s"
 }'
+
+#打印小包标签
+print_tracking_label: '{
+  "data": {
+    "trackingNumber": "%s",
+    "referenceNumber":"",
+    "lastmileTrackingNumber": "",
+    "operateUser": "ZL",
+  },
+  "messageId": "201708141026540001",
+  "timestamp": "%s"
+}'
+
+#打印大包标签
+print_bag_label: '{
+  "data": {
+    "bagId": "%s",
+    "lastmileTrackingNumber": "",
+    "operateUser": "ZL"
+  },
+  "messageId": "20170814102650213",
+  "timestamp": "%s"
+}
+'
 consignee:
   # 加拿大
   CA:
@@ -367,7 +391,7 @@ consignee:
     consigneePhone: "1001111"
     consigneeState: "afddffd"
     consigneeCity: "Lancaster"
-    consigneeZipCode: "01028"
+    consigneeZipCode: "53398"
     address: "27 Sawgrass Lane"
     address2: ""
     skuDescCn: "尺子"
@@ -471,6 +495,26 @@ consignee:
     consigneeState: "state"
     consigneeCity: "Lancaster"
     consigneeZipCode: "00621"
+    address: "27 Sawgrass Lane"
+    address2: ""
+    skuDescCn: "尺子"
+    skuDesc: "rule"
+  MY:
+    consigneeFullName: "xMan"
+    consigneePhone: "1001111"
+    consigneeState: "JOHOR"
+    consigneeCity: "BATU PAHAT"
+    consigneeZipCode: "83020"
+    address: "27 Sawgrass Lane"
+    address2: ""
+    skuDescCn: "尺子"
+    skuDesc: "rule"
+  SG:
+    consigneeFullName: "xMan"
+    consigneePhone: "1001111"
+    consigneeState: "state"
+    consigneeCity: "Lancaster"
+    consigneeZipCode: "018958"
     address: "27 Sawgrass Lane"
     address2: ""
     skuDescCn: "尺子"

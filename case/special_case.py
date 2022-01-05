@@ -20,21 +20,22 @@ def special_as_case(origin_data, package_num):
     # with open(rootPath + "\\data\\case.txt", "r") as f:  # 打开文件
     #     tracking_nums = f.readlines()
     for i in range(package_num):
-        track = CreatData.get_num(10)
+        track = HandleTestCase().get_tracking_num()
+        HandleTestCase().update_tracking_num(track)
         data = str({
             "trackingNumber": "%s",
             "referenceNumber": "%s",
             "consigneeFullName": "BOUCHRA",
             "consigneeBusinessName": "BOUCHRA",
             "consigneePhone": "1123123456",
-            "consigneeCountry": "MX",
-            "consigneeState": "Germany",
-            "consigneeCity": "Marl",
+            "consigneeCountry": "SG",
+            "consigneeState": "state",
+            "consigneeCity": "city",
             "consigneeDistrict": "Marl",
             "consigneeAddr1": "Allensteiner Str. 11",
             "consigneeAddr2": "",
             "consigneeAddr3": "",
-            "consigneeZipCode": "45770",
+            "consigneeZipCode": "145770",
             "sellerFullName": "Jackie Chan",
             "sellerBusinessName": "Jackie Chan",
             "sellerPhone": "12345678911",
@@ -46,11 +47,11 @@ def special_as_case(origin_data, package_num):
             "sellerAddr2": "",
             "sellerAddr3": "",
             "sellerZipCode": "123456",
-            "lastMileServiceCode": "MXPACK",
+            "lastMileServiceCode": "JTSGSTD",
             "packageHeight": 5.00,
             "packageLength": 40.00,
             "packageTotalValue": 6.91,
-            "currency": "EUR",
+            "currency": "USD",
             "packageTotalWeight": 2000.00,
             "packageWidth": 5.00,
             "battery": 0,
@@ -62,7 +63,7 @@ def special_as_case(origin_data, package_num):
                     "skuDesc": "CCEI-Test3",
                     "skuDescCn": "CCEI-测试3",
                     "skuValue": 6.91,
-                    "currency": "EUR",
+                    "currency": "USD",
                     "quantity": 1,
                     "skuWeight": 10.00,
                     "hscode": "010000",
@@ -80,24 +81,21 @@ def get_test():
     ori_data = {
         "data": {
             "project": "eBay",
-            "businessCode": "LM",
-            "hoauBagId": "1231233211234",
-            "lastMileBagId": "655DE90000010",
+            "businessCode": "LM&LH",
+            "hoauBagId": "OCTEST20211123",
+            "lastMileBagId": "OCTEST20211123",
             "bagWeight": 50,
             "vehicleNumber": "京12",
             "driverContactName": "12",
             "driverContactPhone": "12",
             "mawb": "526-58571376",
             "flightNumber": "MAWB(526-58571376)-FlightNumber(CA321)-ETD(2017-08-03T22:00:00+0800)-ETA(2017-08-04T10:00:00+0800)-DEPT(HKG)-ARR(LAX)-ATD(2017-08-03T22:00:00+0800)-ATA(2017-08-04T10:00:00+0800)",
-            "lineHaulVendorName": "MC",
-            "lineHaulCountry": "CN",
-            "lineHaulGateWay": "HKG",
-            "lineHaulServiceCode": "FAST",
-            "lastMileCountry": "NL",
-            "lastMileGateWay": "TLV",
+            "lineHaulVendorName": "JT",
+            "lastMileCountry": "MY",
+            "lastMileGateWay": "PVG",
             "lastMileLocation": "ASD-TLV仓",
-            "lastMileServiceCode": "MXPACK",
-            "lastMileVendorName": "MXPACK",
+            "lastMileServiceCode": "JTSGSTD",
+            "lastMileVendorName": "JT",
             "battery": 1,
             "incoterm": 0,
             "lengthUnit": 0,
@@ -107,10 +105,10 @@ def get_test():
     }
     handle = HandleTestCase()
     test_data, track = special_as_case(ori_data, 200)
-    req = RequestClient("http://10.39.232.52:8424")
+    req = RequestClient("http://testx.orangeconnex.com")
     headers = {"Content-Type": "application/json"}
 
-    result = req.get_request(path="/jv-vendor/v1/confirmShipmentToMc", port="", method="post",
+    result = req.get_request(path="/api/gemini-inner/jv-vendor/v1/confirmShipmentToJt", port="", method="post",
                              headers=headers,
                              params="", json_value=handle.get_deal_params("test", str(test_data)),
                              data="", file_value="")

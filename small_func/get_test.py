@@ -56,7 +56,9 @@ class GetTest:
         test_data1 = list(map(int, test_data1))
         test_data2 = ex_data["zipcode"].tolist()
         union_data = set(test_data1) & set(test_data2)
-
+    def num_t(self):
+        for i in range(13,233):
+            print(i)
 
 if __name__ == '__main__':
-    GetTest().compare_zipcode()
+    GetTest().num_t()

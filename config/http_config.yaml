@@ -19,8 +19,8 @@ dg_test:
   username: "181471"
   password: "650870b8f852071f45b99bb285f71a5c"
   again_label: "http://10.39.232.133:8088/scorpio/api/packages/v1/printAgain/"
-  pre_label: "http://10.39.232.133:8088/scorpio/api/packages/v1/preAgainPrint/0/"
-  login_path : "http://10.39.232.133:8088/scorpio/users/v1/session"
+  last_tracking_print : "http://10.39.232.133:8088/scorpio/api/vendor/rfd/package/v1/print_label_again"
+  last_bag_print : "http://10.39.232.133:8088/scorpio/api/vendor/rfd/last_mile_bags/v1/print_label_again"
 
 jx_test:
   validation_url: 'http://10.39.232.54:8080/validation'
@@ -41,8 +41,8 @@ jx_test:
   username: "181471"
   password: "70b4269b412a8af42b1f7b0d26eceff2"
   lagain_label: "http://10.39.232.49:9108/scorpio/api/packages/v1/printAgain/"
-  pre_labe: "http://10.39.232.49:9108/scorpio/api/packages/v1/preAgainPrint/0/"
-  login_path : "http://10.39.232.49:9108/scorpio/users/v1/session"
+  last_tracking_print : "http://10.39.232.49:9108/api/vendor/jx/package/v1/print_label_again"
+  last_bag_print : "http://10.39.232.133:8088/scorpio/api/vendor/rfd/last_mile_bags/v1/print_label_again"
 
 
 hk_test:
@@ -63,6 +63,8 @@ hk_test:
   bag_weight: ""
   # 出库接口
   out_package: "http://testx.orangeconnex.com:9091/api/vendor/hk/last_mile_bags/v1/delivery"
+  last_tracking_print : "http://testx.orangeconnex.com:9091/api/vendor/hk/package/v1/print_label_again"
+  last_bag_print : "http://testx.orangeconnex.com:9091/api/vendor/hk/last_mile_bags/v1/print_label_again"
 
 dg_pre:
   validation_url: 'http://10.39.232.52:8080/validation'
@@ -82,6 +84,8 @@ dg_pre:
   bag_weight: "http://10.37.12.21:9099/scorpio/api/lastmile/v1/bag/weight"
   # 出库接口
   out_package: "http://10.37.12.21:8088/scorpio/api/vendor/sino/last_mile_bags/v1/delivery"
+  last_tracking_print : "http://10.37.12.21:8088/scorpio/api/vendor/rfd/package/v1/print_label_again"
+  last_bag_print : "http://10.37.12.21:8088/scorpio/api/vendor/rfd/last_mile_bags/v1/print_label_again"
 
 jx_pre:
   validation_url: 'http://10.39.232.52:8080/validation'
@@ -101,6 +105,8 @@ jx_pre:
   bag_weight: ""
   # 出库接口
   out_package: "http://180.168.45.28:9118/api/vendor/sino/last_mile_bags/v1/delivery"
+  last_tracking_print : "http://180.168.45.28:9118/api/vendor/jx/package/v1/print_label_again"
+  last_bag_print : "http://180.168.45.28:9118/scorpio/api/vendor/rfd/last_mile_bags/v1/print_label_again"
 
 hk_pre:
   validation_url: 'http://10.39.232.52:8080/validation'
@@ -120,6 +126,8 @@ hk_pre:
   bag_weight: ""
   # 出库接口
   out_package: "http://testx-pr.orangeconnex.com:9092/api/vendor/hk/last_mile_bags/v1/delivery"
+  last_tracking_print : "http://testx-pr.orangeconnex.com:9092/api/vendor/hk/package/v1/print_label_again"
+  last_bag_print : "http://testx-pr.orangeconnex.com:9092/api/vendor/hk/last_mile_bags/v1/print_label_again"
 
 dg_stage:
   validation_url: 'http://10.39.232.58:8080/validation'
@@ -140,6 +148,8 @@ dg_stage:
 
   # 出库接口 http://10.39.232.213:9601/api/outbound/v1/action
   out_package: "http://10.39.232.213:9601/api/vendor/sino/last_mile_bags/v1/delivery"
+  last_tracking_print : "http://10.39.232.213:9601/scorpio/api/vendor/rfd/package/v1/print_label_again"
+  last_bag_print : "http://10.39.232.213:9601/scorpio/api/vendor/rfd/last_mile_bags/v1/print_label_again"
 
 jx_stage:
   validation_url: 'http://10.39.232.58:8080/validation'
@@ -160,4 +170,7 @@ jx_stage:
   bag_weight: ""
   # 出库接口
   out_package: "http://10.39.231.27:9603/api/vendor/sino/last_mile_bags/v1/delivery"
+  last_tracking_print : "http://10.39.231.27:9603/api/vendor/jx/package/v1/print_label_again"
+  last_bag_print : "http://10.39.231.27:9603/scorpio/api/vendor/rfd/last_mile_bags/v1/print_label_again"
+
 

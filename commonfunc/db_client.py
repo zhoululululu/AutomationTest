@@ -21,31 +21,31 @@ class MysqlClient:
 
         self.config = Config("sql")
         self.c = self.config.get_sql_info(env)
-        if env != "pro_oc":
-            self.conn = pymysql.connect(
-                host=self.c["db_host"],
-                user=self.c["user_name"],
-                password=self.c["user_pwd"],
-                db=self.c["db"],
-                port=self.c["db_port"],
-            )
-        else:
-            # 连接ssh
-            server = SSHTunnelForwarder(
-                (self.c["ssh_host"], self.c["ssh_port"]),  # ssh IP和port
-                ssh_password=self.c["ssh_user"],  # ssh 密码
-                ssh_username=self.c["ssh_password"],  # ssh账号
-                remote_bind_address=('127.0.0.1', 3306),
-                local_bind_address=('1.1.1.1', 3306))
+        # if env != "pro_oc":
+        self.conn = pymysql.connect(
+            host=self.c["db_host"],
+            user=self.c["user_name"],
+            password=self.c["user_pwd"],
+            db=self.c["db"],
+            port=self.c["db_port"],
+        )
+        # else:
+        #     # 连接ssh
+        #     server = SSHTunnelForwarder(
+        #         (self.c["ssh_host"], self.c["ssh_port"]),  # ssh IP和port
+        #         ssh_password=self.c["ssh_user"],  # ssh 密码
+        #         ssh_username=self.c["ssh_password"],  # ssh账号
+        #         remote_bind_address=('127.0.0.1', 3306),
+        #         local_bind_address=('1.1.1.1', 3306))
             # 启动服务
-            server.start()
-            self.conn = pymysql.connect(
-                host=self.c["db_host"],
-                user=self.c["user_name"],
-                password=self.c["user_pwd"],
-                db=self.c["db"],
-                port=self.c["db_port"],
-            )
+            # server.start()
+            # self.conn = pymysql.connect(
+            #     host=self.c["db_host"],
+            #     user=self.c["user_name"],
+            #     password=self.c["user_pwd"],
+            #     db=self.c["db"],
+            #     port=self.c["db_port"],
+            # )
         self.cursor = self.conn.cursor()  # 游标，用来执行数据库
 
     def change_db(self, db):

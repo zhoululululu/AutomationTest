@@ -79,16 +79,17 @@ class ImportOrder(object):
 if __name__ == '__main__':
     # 2839139448256143,http://52.175.52.220
     # 8772502972352061,http://isdedis.eastasia.cloudapp.azure.com:18080
-    env = "stage"
+    env = "pre"
     if env == "test":
         url = "http://isdedis.eastasia.cloudapp.azure.com:18080"
-        isid = "2220040455552376" #2220040455552376,8772502972352061
+        isid = "2220040455552376"  # 2220040455552376,8772502972352061
     elif env == "pre":
         url = "http://52.175.52.220"
-        isid = "2668758785280976"
+        isid = "2839139448256143"
     elif env == "stage":
         url = "https://stage.edisebay.com"
         isid = "2579478844736488"
-        #url, is_id, file, num, country
+        # url, is_id, file, num, country
+
     ImportOrder(url, isid, rootPath + "\\data\\order.xlsx",
-                1, "DK").import_order()
+                40, "US").import_order()

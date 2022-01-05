@@ -31,6 +31,8 @@ class Config(object):
                 self.file_path = rootPath + "\\config\\mysql_config.yaml"
             elif type == "json":
                 self.file_path = rootPath + "\\config\\json.yaml"
+            elif type == "ui_xpath":
+                self.file_path = rootPath + "\\data\\ui\\xpath.yaml"
             self.config = YamlManage(self.file_path)
             self.conf = {}
 
@@ -94,6 +96,8 @@ class Config(object):
         self.conf['get_last_mile_bag'] = self.config.read_yaml("get_last_mile_bag")
         self.conf['bag_weight'] = self.config.read_yaml("bag_weight")
         self.conf['out_package'] = self.config.read_yaml("out_package")
+        self.conf['print_tracking_label'] = self.config.read_yaml("print_tracking_label")
+        self.conf['print_bag_label'] = self.config.read_yaml("print_bag_label")
         self.conf['consignee_full_name'] = self.config.read_yaml("consignee", [country, "consigneeFullName"])
         self.conf['consignee_phone'] = self.config.read_yaml("consignee", [country, "consigneePhone"])
         self.conf['consignee_state'] = self.config.read_yaml("consignee", [country, "consigneeState"])
@@ -117,11 +121,8 @@ class Config(object):
         self.conf['get_last_mile_bag'] = self.config.read_yaml(sortation + "_" + env, "get_last_mile_bag")
         self.conf['bag_weight'] = self.config.read_yaml(sortation + "_" + env, "bag_weight")
         self.conf['out_package'] = self.config.read_yaml(sortation + "_" + env, "out_package")
-        self.conf['username'] = self.config.read_yaml(sortation + "_" + env, "username")
-        self.conf['password'] = self.config.read_yaml(sortation + "_" + env, "password")
-        self.conf['pre_label'] = self.config.read_yaml(sortation + "_" + env, "pre_label")
-        self.conf['again_label'] = self.config.read_yaml(sortation + "_" + env, "again_label")
-        self.conf['login_path'] = self.config.read_yaml(sortation + "_" + env, "login_path")
+        self.conf['last_tracking_print'] = self.config.read_yaml(sortation + "_" + env, "last_tracking_print")
+        self.conf['last_bag_print'] = self.config.read_yaml(sortation + "_" + env, "last_bag_print")
 
         return self.conf
 
@@ -200,8 +201,25 @@ class Config(object):
         else:
             return "空空如也！"
 
+    def get_ui_xpath(self):
+        self.conf['account'] = self.config.read_yaml("account")
+        self.conf['password'] = self.config.read_yaml("password")
+        self.conf['submit'] = self.config.read_yaml("submit")
+        self.conf['qa'] = self.config.read_yaml("qa")
+        self.conf['search_tab'] = self.config.read_yaml("search_tab")
+        self.conf['product'] = self.config.read_yaml("product")
+        self.conf['spk'] = self.config.read_yaml("spk")
+        self.conf['query_box'] = self.config.read_yaml("query_box")
+        self.conf['search_select'] = self.config.read_yaml("search_select")
+        self.conf['search_submit'] = self.config.read_yaml("search_submit")
+        self.conf['choose_range_before'] = self.config.read_yaml("choose_range_before")
+        self.conf['choose_range'] = self.config.read_yaml("choose_range")
+        self.conf['report_btn'] = self.config.read_yaml("report_btn")
+        self.conf['total_num'] = self.config.read_yaml("total_num")
+        self.conf['assign_by'] = self.config.read_yaml("assign_by")
+        self.conf['generate_report'] = self.config.read_yaml("generate_report")
+        self.conf['no1_assign'] = self.config.read_yaml("no1_assign")
+        self.conf['no1_bugs'] = self.config.read_yaml("no1_bugs")
+
+        return self.conf
 #
-# if __name__ == '__main__':
-#     demo = Config("order")
-#     print(demo.get_sorting_value(country="AT", vendor_code="SP", product="ES", first_sorting=2, service_code=None,
-#                                  sorting_result=None))

@@ -10,6 +10,7 @@ import pytest
 import os
 import time
 import pandas as pd
+from case.chandao_count import ChanDaoCount
 
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
@@ -38,9 +39,9 @@ def change_env(file, desc, env, url):
 
 def job_func():
     # , "stage环境" , "http://10.39.232.58"
-    desc_list = ["测试环境", "预发布环境", "生产环境"]
-    env_list = ["test", "pre", "pro"]
-    url_list = ["http://10.39.232.54", "http://10.39.232.52", "http://10.39.232.56"]
+    desc_list = ["生产环境"]
+    env_list = ["pro"]
+    url_list = ["http://10.39.232.56"]
     # 创建新线程
     for i in range(len(desc_list)):
         my_test = MyOneByOne(desc_list[i], env_list[i], url_list[i])
@@ -48,8 +49,15 @@ def job_func():
         time.sleep(2)
 
 
+def chandao_job():
+    ChanDaoCount().robot_send("http://project.itiaoling.com/zentao/user-login.html")
+
+
 scheduler = BlockingScheduler()
 # 在 2021-09-22 15:40:00 ~ 2022-09-22 15:40:00' 之间, 每天执行一次 job_func 方法 -days=1(每天触发）
-scheduler.add_job(job_func, 'interval', days=1, start_date='2021-11-11 09:00:00', end_date='2022-10-09 09:00:00')
+
+# scheduler.add_job(job_func, 'interval', weeks=1, start_date='2021-12-08 09:00:00', end_date='2022-10-09 09:00:00')
+scheduler.add_job(job_func, 'cron', day_of_week="tue", hour=9)
+scheduler.add_job(chandao_job, 'cron', day_of_week="mon,tue,wed,thu,fri", hour=9, minute=1)
 
 scheduler.start()

@@ -202,6 +202,39 @@ class RDCSqlStatement(object):
                 "select lastmile_bag_no,weight from t_scan_package where tracking_number='%s' and is_active=1;" % tracking_number)
         return self.cursor.execute_sql(sql=bag_weight)[0]
 
+    def select_last_mile_label(self, tracking_number):
+        """
+        搜索面单
+        :param tracking_number:物流订单号
+        :return:
+        """
+        bag_weight = (
+                "select lastmile_label_url from t_scan_package where tracking_number='%s' and is_active=1;" % tracking_number)
+        return self.cursor.execute_sql(sql=bag_weight)[0]
+
+    def select_service_code(self, tracking_number):
+        """
+        搜索订单服务
+        :param tracking_number:物流订单号
+        :return:
+        """
+        service_code = (
+                "select service_code from t_waybill_process_expected  "
+                "where tracking_number='%s' and main_process_code = 'EC' "
+                "and is_active=1 "
+                "order by process_index asc;  " % tracking_number)
+        return self.cursor.execute_sql(sql=service_code)[0]
+
+    def select_last_bag_label(self, bag_id):
+        """
+        搜索大包面单
+        :param bag_id:大包号
+        :return:
+        """
+        bag_label = (
+                "select label_path from t_last_mile_bag where bag_no='%s' and is_active=1;" % bag_id)
+        return self.cursor.execute_sql(sql=bag_label)[0]
+
     def select_out_bag(self, tracking_number_list):
         """
         搜索出库数据

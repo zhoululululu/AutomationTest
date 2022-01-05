@@ -105,6 +105,16 @@ class CreatData(Faker):
         return int(random_num)
 
     @classmethod
+    def get_str_num(cls, num_len: int):
+        """
+        生成一个指定长度的随机数字串，num_len为数字串长度
+        :param num_len:
+        """
+        num_list = [str(random.randint(0, 9)) for i in range(num_len)]
+        random_num = ''.join(num_list)
+        return str(random_num)
+
+    @classmethod
     def get_uuid(cls, source):
         """
         字符串加上uuid

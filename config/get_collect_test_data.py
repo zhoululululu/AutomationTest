@@ -3,7 +3,7 @@
 Created on 2020/2/29
 @File  : get_collect_test_data.py
 @author: zhoul
-@Desc  :
+@Desc  : 还未投入使用---future状态
 """
 
 import os

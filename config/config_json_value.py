@@ -262,6 +262,33 @@ class ConfigJsonValue(object):
                 DateTimeTool.get_now_time(), DateTimeTool.get_how_days_after(1), DateTimeTool.get_now_time()))
         return out_package_data
 
+    def get_tracking_label_data(self):
+        """
+        封装打印小包面单接口参数
+        :return:
+        """
+        tracking_label_data = eval(
+            self.config["print_tracking_label"] % (self.tracking_number, DateTimeTool.get_now_time()))
+
+        return self.tracking_number, tracking_label_data
+
+    def get_bag_label_data(self, bag_id):
+        """
+        封装打印小包面单接口参数
+        :return:
+        """
+        bag_label_data = eval(
+            self.config["print_bag_label"] % (bag_id, DateTimeTool.get_now_time()))
+
+        return self.tracking_number, bag_label_data
+
+    def get_service_code(self):
+        """
+        封装打印小包面单接口参数
+        :return:
+        """
+        service_code = self.rdc_cursor.select_service_code(self.tracking_number)[0]
+        return self.tracking_number, service_code
 #
 # if __name__ == '__main__':
 #     # env, sortation, service_id, country, battery, config_type="json"

@@ -7,7 +7,6 @@ Created on 2021/10/18 10:43
 """
 
 import re
-
 from commonfunc.get_logging import Logging
 
 logger = Logging()

@@ -2,110 +2,85 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d34543fb-c66b-4577-9057-3caa5111dbd0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/provide_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/response_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/5976_case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/chandao_count.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/check_sql.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/consignment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/generate_tracking_number.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/get_label.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/get_pfl_consignment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/import_order.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/rdc_flow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/scorpio_package.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/special_case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/线上生产单.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonfunc/assert_tool.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonfunc/beauty_excel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonfunc/collect_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonfunc/db_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonfunc/encrypt_tool.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonfunc/file_manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonfunc/get_faker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonfunc/get_logging.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonfunc/get_regular.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonfunc/handle_test_case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonfunc/json_path_finder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonfunc/logger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonfunc/wx_robot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commonfunc/yaml_manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/config_json_value.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/env.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/get_collect_test_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/http_config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/json.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/log.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/mysql_config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/sorting_consignee.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/test_data.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/200case_data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/5976_case.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Routing_file_economy_22092021 (1).xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/as/as-order.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/as/ascendia-case.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/case.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/case.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/cne/cne-case.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/collection_data.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/jitu/jitu-case.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mi/mi-case-test.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mi/mi-case-test1.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mi/mi-case.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/nl/nl-order.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/nl/nlpost-case.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/nl/nlpostv2-case.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/nl/sp-order.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/order.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/test_file/20211028103729_SP_101_01_error.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/test_file/20211028103936_SP_101_01_error.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/test_file/20211028103948_SP_101_01_error.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/test_file/20211028115031_SP_101_01_error.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/test_file/20211028115457_SP_101_01_error.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/validation/env.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/validation/validation-case.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/自动化规划.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performs/intention_micro_74.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performs/test_performs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performs/zl_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performs/zl_server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest/pytest.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest/pytest_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest/run_all.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest/test_confirm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest/test_interface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest/test_validation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest/validation_one_by_one.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest/validation_scheduler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest/validation_thread.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small_func/20210706155718_WNS_6368_01.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small_func/double_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small_func/get_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small_func/pic_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small_func/setdiff.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small_func/法国邮编.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small_func/邮编白名单去重.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/sql_statement.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testresults/trackingnumber/2021-07-07-18-11-29-tracking-numbers.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testresults/trackingnumber/2021-07-07-18-11-45-tracking-numbers.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testresults/trackingnumber/2021-07-07-18-24-01-tracking-numbers.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AutomationTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AutomationTest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case/special_case_for_mawb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jitu/jt-order.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jitu/jt-sg-order.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/mawb/jitu-mawb.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/mawb/mawb-order.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/mawb/mawb.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sql_data/sql_data.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/sql_data/sql_data1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/ui/xpath.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/validation/validation-case1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytest/test_mawb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small_func/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small_func/极兔物流对接尾程.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/check_sql_statement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/request_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/request_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commonfunc/1_Jduge.py" beforeDir="false" afterPath="$PROJECT_DIR$/commonfunc/jduge.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commonfunc/datetime_tool.py" beforeDir="false" afterPath="$PROJECT_DIR$/commonfunc/datetime_tool.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commonfunc/email_tool.py" beforeDir="false" afterPath="$PROJECT_DIR$/commonfunc/email_tool.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commonfunc/faker.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commonfunc/sleep_tool.py" beforeDir="false" afterPath="$PROJECT_DIR$/commonfunc/sleep_tool.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/provide_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/provide_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case/chandao_count.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/chandao_count.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case/check_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/check_sql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case/generate_tracking_number.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/generate_tracking_number.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case/import_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/import_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case/rdc_flow.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/rdc_flow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case/special_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/special_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonfunc/db_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/commonfunc/db_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonfunc/get_faker.py" beforeDir="false" afterPath="$PROJECT_DIR$/commonfunc/get_faker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonfunc/get_regular.py" beforeDir="false" afterPath="$PROJECT_DIR$/commonfunc/get_regular.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonfunc/handle_test_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/commonfunc/handle_test_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonfunc/wx_robot.py" beforeDir="false" afterPath="$PROJECT_DIR$/commonfunc/wx_robot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config_json_value.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config_json_value.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/get_collect_test_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/get_collect_test_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/get_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/get_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/http_config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/http_config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/json.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/json.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/mysql_config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/mysql_config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/sorting_consignee.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/config/sorting_consignee.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/jitu/jitu-case.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/jitu/jitu-case.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/validation/validation-case.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/validation/validation-case.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest/test_confirm.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytest/test_confirm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest/test_validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytest/test_validation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest/validation_scheduler.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytest/validation_scheduler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small_func/get_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/small_func/get_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/small_func/setdiff.py" beforeDir="false" afterPath="$PROJECT_DIR$/small_func/setdiff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/sql_statement.py" beforeDir="false" afterPath="$PROJECT_DIR$/sql/sql_statement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/bug/bugpic/2021-11-09-bug.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/bug/bugpic/2021-11-09-bug截图_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-04_测试环境_validation_result.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-04_生产环境_validation_result.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-04_预发布环境_validation_result.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-05_测试环境_validation_error_result.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-05_测试环境_validation_result.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-05_生产环境_validation_result.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-05_预发布环境_validation_result.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-06_stage环境_validation_error_result.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-06_测试环境_validation_error_result.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-06_生产环境_validation_error_result.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-06_预发布环境_validation_error_result.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-07_stage环境_validation_error_result.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-07_测试环境_validation_error_result.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-07_生产环境_validation_error_result.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-07_预发布环境_validation_error_result.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-08_stage环境_validation_error_result.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-08_测试环境_validation_error_result.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-08_测试环境_validation_result.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-08_生产环境_validation_error_result.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-08_生产环境_validation_result.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-08_预发布环境_validation_error_result.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-08_预发布环境_validation_result.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-09_测试环境_validation_result.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-09_生产环境_validation_result.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-09_预发布环境_validation_result.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-10_测试环境_validation_error_result.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-11_stage环境_validation_error_result.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-11_测试环境_validation_error_result.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-11_测试环境_validation_result.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-11_生产环境_validation_error_result.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-11_生产环境_validation_result.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-11_预发布环境_validation_error_result.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-11_预发布环境_validation_result.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,14 +118,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/performs/zl_client.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/config/get_config.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/case/scorpio_package.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/api/request_client.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/commonfunc/yaml_manage.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/api/request_client.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/commonfunc/datetime_tool.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/case/scorpio_package.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/commonfunc/db_client.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/commonfunc/sleep_tool.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/config/config.yaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/commonfunc/datetime_tool.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -227,19 +200,21 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kuaishang_auto" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\py_workspace\AutomationTest\data\jitu" />
-      <recent name="D:\py_workspace\AutomationTest\data\mi" />
-      <recent name="D:\py_workspace\AutomationTest\data" />
-      <recent name="D:\py_workspace\AutomationTest\data\test_file" />
+      <recent name="D:\py_workspace\AutomationTest\sql" />
+      <recent name="D:\py_workspace\AutomationTest\case" />
       <recent name="D:\py_workspace\AutomationTest\config" />
+      <recent name="D:\py_workspace\AutomationTest\data\sql_data" />
+      <recent name="D:\py_workspace\AutomationTest\data\jitu" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\py_workspace\AutomationTest\pytest" />
@@ -249,29 +224,7 @@
       <recent name="D:\py_workspace\AutomationTest\data\as" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_validation.TestValidation.test_api_test">
-    <configuration name="Image" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="AutomationTest" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Python/Lib/site-packages/PIL" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../Python/Lib/site-packages/PIL/Image.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.get_test">
     <configuration name="chandao_count" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AutomationTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -294,7 +247,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="get_label" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="get_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AutomationTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/small_func" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/small_func/get_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="import_order" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AutomationTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -307,7 +282,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/get_label.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/import_order.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="provide_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AutomationTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api/provide_api.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -360,38 +357,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_validation.TestValidation.test_api_test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="AutomationTest" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytest" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_validation.TestValidation.test_api_test&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.thread_test" />
+      <item itemvalue="Python.provide_api" />
+      <item itemvalue="Python.import_order" />
       <item itemvalue="Python.validation_scheduler" />
       <item itemvalue="Python.chandao_count" />
-      <item itemvalue="Python.Image" />
-      <item itemvalue="Python.get_label" />
-      <item itemvalue="Python tests.pytest for test_validation.TestValidation.test_api_test" />
+      <item itemvalue="Python.get_test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_validation.TestValidation.test_api_test" />
+        <item itemvalue="Python.get_test" />
         <item itemvalue="Python.validation_scheduler" />
-        <item itemvalue="Python.get_label" />
+        <item itemvalue="Python.provide_api" />
+        <item itemvalue="Python.import_order" />
         <item itemvalue="Python.chandao_count" />
-        <item itemvalue="Python.Image" />
       </list>
     </recent_temporary>
   </component>
@@ -458,7 +438,14 @@
       <workItem from="1634087792259" duration="16000" />
       <workItem from="1634087900235" duration="7096000" />
       <workItem from="1634174354866" duration="30258000" />
-      <workItem from="1634713059021" duration="176677000" />
+      <workItem from="1634713059021" duration="177942000" />
+      <workItem from="1636620900124" duration="3000" />
+      <workItem from="1636620968470" duration="82157000" />
+      <workItem from="1637733678280" duration="29548000" />
+      <workItem from="1638154524898" duration="104823000" />
+      <workItem from="1639120524605" duration="16141000" />
+      <workItem from="1639736077786" duration="11403000" />
+      <workItem from="1640827364042" duration="9808000" />
     </task>
     <servers />
   </component>
@@ -500,44 +487,57 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/commonfunc/email_tool.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/AutomationTest$pytest_for_test_confirm_TestInterface_test_api.coverage" NAME="pytest for test_confirm.TestInterface.test_api Coverage Results" MODIFIED="1636354787873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
+    <SUITE FILE_PATH="coverage/AutomationTest$pytest_for_test_confirm_TestInterface_test_api.coverage" NAME="pytest for test_confirm.TestInterface.test_api Coverage Results" MODIFIED="1637586518681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
     <SUITE FILE_PATH="coverage/AutomationTest$double_test.coverage" NAME="double_test Coverage Results" MODIFIED="1634017513452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/small_func" />
     <SUITE FILE_PATH="coverage/AutomationTest$validation_thread.coverage" NAME="validation_thread Coverage Results" MODIFIED="1635819543309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
     <SUITE FILE_PATH="coverage/AutomationTest$pytest_in_get_test_py.coverage" NAME="pytest in get_test.py Coverage Results" MODIFIED="1629423096560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/small_func" />
     <SUITE FILE_PATH="coverage/AutomationTest$config_json_value.coverage" NAME="config_json_value Coverage Results" MODIFIED="1636422068876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
-    <SUITE FILE_PATH="coverage/AutomationTest$pytest_in_test_validation_py.coverage" NAME="pytest in test_validation.py Coverage Results" MODIFIED="1636009128765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
+    <SUITE FILE_PATH="coverage/AutomationTest$pytest_in_test_validation_py.coverage" NAME="pytest in test_validation.py Coverage Results" MODIFIED="1638941826841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
     <SUITE FILE_PATH="coverage/AutomationTest$assert_tool.coverage" NAME="assert_tool Coverage Results" MODIFIED="1630895112918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/commonfunc" />
     <SUITE FILE_PATH="coverage/AutomationTest$pytest_in_pytest_1_py.coverage" NAME="pytest in pytest_1.py Coverage Results" MODIFIED="1632823904105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
     <SUITE FILE_PATH="coverage/AutomationTest$datetime_tool.coverage" NAME="datetime_tool Coverage Results" MODIFIED="1625738435109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/commonfunc" />
     <SUITE FILE_PATH="coverage/AutomationTest$validation_one_by_one.coverage" NAME="validation_one_by_one Coverage Results" MODIFIED="1633680779649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
     <SUITE FILE_PATH="coverage/AutomationTest$reader.coverage" NAME="reader Coverage Results" MODIFIED="1625629921986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Devops_Rdc/TrackingNumberUtils/base_reader" />
     <SUITE FILE_PATH="coverage/AutomationTest$beauty_excel.coverage" NAME="beauty_excel Coverage Results" MODIFIED="1636015826512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/commonfunc" />
+    <SUITE FILE_PATH="coverage/AutomationTest$special_case_for_mawb.coverage" NAME="special_case_for_mawb Coverage Results" MODIFIED="1637563438554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/AutomationTest$pytest_for_handle_test_case_test1.coverage" NAME="pytest for handle_test_case.test1 Coverage Results" MODIFIED="1625477674486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/commonfunc" />
-    <SUITE FILE_PATH="coverage/AutomationTest$get_test.coverage" NAME="get_test Coverage Results" MODIFIED="1631098607673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/small_func" />
+    <SUITE FILE_PATH="coverage/AutomationTest$get_test.coverage" NAME="get_test Coverage Results" MODIFIED="1641289941005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/small_func" />
     <SUITE FILE_PATH="coverage/AutomationTest$pytest_in_test_interface_py.coverage" NAME="pytest in test_interface.py Coverage Results" MODIFIED="1631779412813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
-    <SUITE FILE_PATH="coverage/AutomationTest$setdiff.coverage" NAME="setdiff Coverage Results" MODIFIED="1636093639262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/small_func" />
     <SUITE FILE_PATH="coverage/AutomationTest$Image.coverage" NAME="Image Coverage Results" MODIFIED="1636452586977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../Python/Lib/site-packages/PIL" />
+    <SUITE FILE_PATH="coverage/AutomationTest$setdiff.coverage" NAME="setdiff Coverage Results" MODIFIED="1638939458424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/small_func" />
     <SUITE FILE_PATH="coverage/AutomationTest$validation_scheduler__1_.coverage" NAME="validation_scheduler (1) Coverage Results" MODIFIED="1632298281974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
     <SUITE FILE_PATH="coverage/AutomationTest$yaml_manage.coverage" NAME="yaml_manage Coverage Results" MODIFIED="1622184602729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/commonfunc" />
     <SUITE FILE_PATH="coverage/AutomationTest$run_all__1_.coverage" NAME="run_all (1) Coverage Results" MODIFIED="1625469472440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
-    <SUITE FILE_PATH="coverage/AutomationTest$pytest_for_test_validation_TestValidation.coverage" NAME="pytest for test_validation.TestValidation Coverage Results" MODIFIED="1636342314653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
-    <SUITE FILE_PATH="coverage/AutomationTest$provide_api.coverage" NAME="provide_api Coverage Results" MODIFIED="1636557981147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" />
+    <SUITE FILE_PATH="coverage/AutomationTest$pytest_for_test_validation_TestValidation.coverage" NAME="pytest for test_validation.TestValidation Coverage Results" MODIFIED="1639706403039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
+    <SUITE FILE_PATH="coverage/AutomationTest$provide_api.coverage" NAME="provide_api Coverage Results" MODIFIED="1640832554662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" />
     <SUITE FILE_PATH="coverage/AutomationTest$get_config.coverage" NAME="get_config Coverage Results" MODIFIED="1635386933408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
-    <SUITE FILE_PATH="coverage/AutomationTest$validation_scheduler.coverage" NAME="validation_scheduler Coverage Results" MODIFIED="1636594274631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
+    <SUITE FILE_PATH="coverage/AutomationTest$validation_scheduler.coverage" NAME="validation_scheduler Coverage Results" MODIFIED="1641261576470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
     <SUITE FILE_PATH="coverage/AutomationTest$collect_data.coverage" NAME="collect_data Coverage Results" MODIFIED="1630661323512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/commonfunc" />
     <SUITE FILE_PATH="coverage/AutomationTest$generate_tracking_number.coverage" NAME="generate_tracking_number Coverage Results" MODIFIED="1633768121893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/AutomationTest$pytest_for_test_validation_TestInterface.coverage" NAME="pytest for test_validation.TestInterface Coverage Results" MODIFIED="1633663126584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
-    <SUITE FILE_PATH="coverage/AutomationTest$special_case.coverage" NAME="special_case Coverage Results" MODIFIED="1631857912659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
+    <SUITE FILE_PATH="coverage/AutomationTest$special_case.coverage" NAME="special_case Coverage Results" MODIFIED="1637632465895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/AutomationTest$get_regular.coverage" NAME="get_regular Coverage Results" MODIFIED="1634526901060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/commonfunc" />
     <SUITE FILE_PATH="coverage/AutomationTest$get_logging.coverage" NAME="get_logging Coverage Results" MODIFIED="1626083042987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/commonfunc" />
     <SUITE FILE_PATH="coverage/AutomationTest$pytest_in_assert_tool_py.coverage" NAME="pytest in assert_tool.py Coverage Results" MODIFIED="1625215863814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/commonfunc" />
+    <SUITE FILE_PATH="coverage/AutomationTest$pytest_for_test_mawb_TestInterface_test_api.coverage" NAME="pytest for test_mawb.TestInterface.test_api Coverage Results" MODIFIED="1637550569804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
     <SUITE FILE_PATH="coverage/AutomationTest$wx_robot.coverage" NAME="wx_robot Coverage Results" MODIFIED="1631528267271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/commonfunc" />
     <SUITE FILE_PATH="coverage/AutomationTest$thread_test.coverage" NAME="thread_test Coverage Results" MODIFIED="1633677263123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/AutomationTest$pytest_for_test_validation_TestInterface_test_api_test.coverage" NAME="pytest for test_validation.TestInterface.test_api_test Coverage Results" MODIFIED="1633658796044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
     <SUITE FILE_PATH="coverage/AutomationTest$run_all.coverage" NAME="run_all Coverage Results" MODIFIED="1632914322412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
-    <SUITE FILE_PATH="coverage/AutomationTest$pytest_in_test_confirm_py.coverage" NAME="pytest in test_confirm.py Coverage Results" MODIFIED="1632390303490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
-    <SUITE FILE_PATH="coverage/AutomationTest$pytest_for_test_confirm_TestInterface.coverage" NAME="pytest for test_confirm.TestInterface Coverage Results" MODIFIED="1636354530659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
+    <SUITE FILE_PATH="coverage/AutomationTest$pytest_in_test_confirm_py.coverage" NAME="pytest in test_confirm.py Coverage Results" MODIFIED="1636943606349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
+    <SUITE FILE_PATH="coverage/AutomationTest$pytest_for_test_confirm_TestInterface.coverage" NAME="pytest for test_confirm.TestInterface Coverage Results" MODIFIED="1637310099386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
     <SUITE FILE_PATH="coverage/AutomationTest$pytest_in_handle_test_case_py.coverage" NAME="pytest in handle_test_case.py Coverage Results" MODIFIED="1625477904630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/commonfunc" />
     <SUITE FILE_PATH="coverage/AutomationTest$request_client.coverage" NAME="request_client Coverage Results" MODIFIED="1625478655877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" />
     <SUITE FILE_PATH="coverage/AutomationTest$pytest_for_test_validation_TestInterface_test_api.coverage" NAME="pytest for test_validation.TestInterface.test_api Coverage Results" MODIFIED="1632743666971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
@@ -545,25 +545,26 @@
     <SUITE FILE_PATH="coverage/AutomationTest$json_path_finder.coverage" NAME="json_path_finder Coverage Results" MODIFIED="1626679026956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/commonfunc" />
     <SUITE FILE_PATH="coverage/AutomationTest$logger.coverage" NAME="logger Coverage Results" MODIFIED="1626083690821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/commonfunc" />
     <SUITE FILE_PATH="coverage/AutomationTest$return_num.coverage" NAME="return_num Coverage Results" MODIFIED="1631090977984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Devops_Rdc/TrackingNumberUtils/base" />
-    <SUITE FILE_PATH="coverage/AutomationTest$handle_test_case.coverage" NAME="handle_test_case Coverage Results" MODIFIED="1636353894437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/commonfunc" />
-    <SUITE FILE_PATH="coverage/AutomationTest$check_sql.coverage" NAME="check_sql Coverage Results" MODIFIED="1629425599642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
+    <SUITE FILE_PATH="coverage/AutomationTest$handle_test_case.coverage" NAME="handle_test_case Coverage Results" MODIFIED="1637056982272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/commonfunc" />
+    <SUITE FILE_PATH="coverage/AutomationTest$check_sql.coverage" NAME="check_sql Coverage Results" MODIFIED="1638754520268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/AutomationTest$get_collect_test_data.coverage" NAME="get_collect_test_data Coverage Results" MODIFIED="1622185482650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
     <SUITE FILE_PATH="coverage/AutomationTest$read_yaml.coverage" NAME="read_yaml Coverage Results" MODIFIED="1622011610569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/commonfunc" />
     <SUITE FILE_PATH="coverage/AutomationTest$consignment.coverage" NAME="consignment Coverage Results" MODIFIED="1622451773895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/AutomationTest$pytest_for_pytest_1_test_04.coverage" NAME="pytest for pytest_1.test_04 Coverage Results" MODIFIED="1632823609418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
     <SUITE FILE_PATH="coverage/AutomationTest$get_label.coverage" NAME="get_label Coverage Results" MODIFIED="1636558229771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
-    <SUITE FILE_PATH="coverage/AutomationTest$chandao_count.coverage" NAME="chandao_count Coverage Results" MODIFIED="1636452732126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
+    <SUITE FILE_PATH="coverage/AutomationTest$chandao_count.coverage" NAME="chandao_count Coverage Results" MODIFIED="1639963434985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/AutomationTest$encrypt_tool.coverage" NAME="encrypt_tool Coverage Results" MODIFIED="1630993641689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/commonfunc" />
     <SUITE FILE_PATH="coverage/AutomationTest$pytest_for_test_interface_TestInterface_test_api.coverage" NAME="pytest for test_interface.TestInterface.test_api Coverage Results" MODIFIED="1631873495091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
     <SUITE FILE_PATH="coverage/AutomationTest$get_faker.coverage" NAME="get_faker Coverage Results" MODIFIED="1632457593534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/commonfunc" />
     <SUITE FILE_PATH="coverage/AutomationTest$5976_case.coverage" NAME="5976_case Coverage Results" MODIFIED="1636101677323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/AutomationTest$rdc_flow.coverage" NAME="rdc_flow Coverage Results" MODIFIED="1636101650206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
-    <SUITE FILE_PATH="coverage/AutomationTest$import_order.coverage" NAME="import_order Coverage Results" MODIFIED="1635216835802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
+    <SUITE FILE_PATH="coverage/AutomationTest$import_order.coverage" NAME="import_order Coverage Results" MODIFIED="1640757841030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/AutomationTest$db_client.coverage" NAME="db_client Coverage Results" MODIFIED="1622011868229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/commonfunc" />
     <SUITE FILE_PATH="coverage/AutomationTest$thread_test__1_.coverage" NAME="thread_test (1) Coverage Results" MODIFIED="1633677035321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
     <SUITE FILE_PATH="coverage/AutomationTest$pytest_for_test_interface_TestInterface.coverage" NAME="pytest for test_interface.TestInterface Coverage Results" MODIFIED="1631788882202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
     <SUITE FILE_PATH="coverage/AutomationTest$faker.coverage" NAME="faker Coverage Results" MODIFIED="1625205894577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/commonfunc" />
-    <SUITE FILE_PATH="coverage/AutomationTest$pytest_for_test_validation_TestValidation_test_api_test.coverage" NAME="pytest for test_validation.TestValidation.test_api_test Coverage Results" MODIFIED="1636612825374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
+    <SUITE FILE_PATH="coverage/AutomationTest$check_sql_statement.coverage" NAME="check_sql_statement Coverage Results" MODIFIED="1638754434211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sql" />
+    <SUITE FILE_PATH="coverage/AutomationTest$pytest_for_test_validation_TestValidation_test_api_test.coverage" NAME="pytest for test_validation.TestValidation.test_api_test Coverage Results" MODIFIED="1636700776945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytest" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/api/request_client.py">

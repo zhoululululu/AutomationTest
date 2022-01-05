@@ -23,7 +23,7 @@ logging = Logging()
 
 class HandleTestCase(object):
     def __init__(self):
-        self.result_as = []
+        self.tracking_number_list, self.tracking_number_status_list = [], []
         self.get_all_tracking_num()
 
     def handle_special(self, env, key, data=None):
@@ -44,6 +44,8 @@ class HandleTestCase(object):
             return CreatData.get_chinese(int(func_value))
         if func_key.split("+")[0] == "num":
             return CreatData.get_num(int(func_value))
+        if func_key.split("+")[0] == "strnum":
+            return CreatData.get_str_num(int(func_value))
         if func_key in ["punctuation"]:
             return CreatData.get_punctuation(data)
         if func_key == "country":
@@ -95,7 +97,7 @@ class HandleTestCase(object):
                                         params_list = handle_result
                                     else:
                                         params_list = self.change_value_test(params_list, p, handle_result)
-                logging.info("params处理成功：%s -> %s" % (str(origin_params), params_list))
+                # logging.info("params处理成功：%s -> %s" % (str(origin_params), params_list))
         else:
             params_list = origin_params
         return params_list
@@ -173,35 +175,23 @@ class HandleTestCase(object):
                     ym_writer.write_yaml(test_case_id, p, re)
 
     def get_all_tracking_num(self):
-        testdata = pandas.read_excel(rootPath + "\\data\\as\\as-order.xlsx", sheet_name="EPAQSCT-IL-EXP")
-        tracking_num = testdata.跟踪号码.tolist()
-        static = testdata.状态.tolist()
-        for i in range(len(static)):
-            self.result_as.append({tracking_num[i]: static[i]})
-        # print(self.result_as)
-        return self.result_as
+        testdata = pandas.read_excel(rootPath + "\\data\\jitu\\jt-sg-order.xlsx", sheet_name="SGtrackingNumber")
+        self.tracking_number_list = testdata.跟踪号码.tolist()
+        self.tracking_number_status_list = testdata.状态.tolist()
 
     def get_tracking_num(self):
-        # for i in self.result_as:
-        #     if "未使用" in i.values():
-        #         print(list(i.keys())[list(i.values()).index("未使用")])
-        #         return list(i.keys())[list(i.values()).index("未使用")]
 
-        return str(CreatData.get_num(int(13)))
+        # return CreatData.get_varchar(int(func_value))
+        for i in range(len(self.tracking_number_list)):
+            if "未使用" in self.tracking_number_status_list[i]:
+                return self.tracking_number_list[i]
 
     def update_tracking_num(self, tracking_number):
-        # for i in self.result_as:
-        #     if tracking_number in i.keys():
-        #         i[tracking_number] = "已使用"
-        #         break
-        pass
-
-    def update_tracking_file(self, tracking_number):
-        # for i in self.result_as:
-        #     if tracking_number in i.keys():
-        #         i[tracking_number] = "已使用"
-        #         break
-        pass
+        for i in range(len(self.tracking_number_list)):
+            if tracking_number == self.tracking_number_list[i]:
+                self.tracking_number_status_list[i] = "已使用"
+        result = pandas.DataFrame({"跟踪号码": self.tracking_number_list, "状态": self.tracking_number_status_list})
+        result.to_excel(rootPath + "\\data\\jitu\\jt-sg-order.xlsx", sheet_name="SGtrackingNumber")
 
     def get_deal_params_with_desc(self, env, origin_params, desc=None):
         if origin_params != "":
@@ -235,8 +225,11 @@ class HandleTestCase(object):
                     v_type = "varchar"
                     if type(value) is int:
                         v_type = "num"
+                    if key in ["consigneePhone", "consigneeZipCode", "sellerPhone",
+                               "sellerZipCode"]:
+                        v_type = "strnum"
                     if key == "skuDescCn":
-                        v_type = "chinses"
+                        v_type = "chinese"
                     if "=" in for_value:  # =
                         value = self.handle_special(env, "$" + v_type + "+" + str(int(for_value.split("=")[1])))
                     elif ">" in for_value:  # >
@@ -262,7 +255,7 @@ class HandleTestCase(object):
                                     params_list = handle_result
                                 else:
                                     params_list = self.change_value_test(params_list, p, handle_result)
-                logging.info("params处理成功：%s -> %s" % (str(origin_params), params_list))
+                # logging.info("params处理成功：%s -> %s" % (str(origin_params), params_list))
         else:
             params_list = origin_params
 
@@ -270,8 +263,25 @@ class HandleTestCase(object):
         print(params_list)
         return params_list
 
-# if __name__ == '__main__':
-#     qqq = HandleTestCase()
+
+if __name__ == '__main__':
+    qqq = HandleTestCase()
+    final_json_value = {
+        'data': {'hoauBagId': 'gRX3aasrWeTmO', 'bagWeight': 100, 'lastMileCountry': 'MY', 'battery': '', 'incoterm': 0,
+                 'packageInfoList': [
+                     {'trackingNumber': 640827310700, 'consigneeFullName': 'BOUCHRA', 'consigneePhone': '11231234566',
+                      'consigneeCountry': 'MY', 'consigneeState': 'Germany', 'consigneeCity': 'Marl',
+                      'consigneeDistrict': 'Marl', 'consigneeAddr1': 'Allensteiner Str. 11',
+                      'consigneeZipCode': '16150', 'sellerFullName': 'Jackie Chan', 'sellerPhone': '12345678911',
+                      'sellerCountry': 'CN', 'sellerState': 'BEIJING', 'sellerCity': 'BEIJING',
+                      'sellerDistrict': 'BEIJING', 'sellerAddr1': 'fahuoren dizhiyi', 'sellerZipCode': '123456',
+                      'lastMileServiceCode': 'JTMYSTD', 'packageTotalValue': 6.91, 'currency': 'USD',
+                      'packageTotalWeight': 2000.0, 'battery': '', 'incoterm': 0, 'itemInfoList': [
+                         {'skuDesc': 'CCEI-Test3', 'skuDescCn': 'CCEI-Test3', 'skuValue': 6.91, 'currency': 'USD'}]}]}}
+
+    qqq.update_tracking_num(
+        final_json_value["data"]["packageInfoList"][0][
+            "trackingNumber"])
 #     test = '{"data":{"project":"eBay","hoauBagId":"$varchar+13","bagWeight":100,"mawb":"526-58571376","lineHaulVendorName":"MC","lineHaulCountry":"CN","lineHaulGateWay":"HKG","lineHaulServiceCode":"FAST","lastMileCountry":"NL","lastMileGateWay":"AMS","lastMileLocation":"SP-AMS","lastMileServiceCode":"IMX","lastMileVendorName":"SP","battery":0,"incoterm":0,"lengthUnit":0,"weightUnit":0,"packageInfoList":[{"trackingNumber":"$varchar+13","consigneeFullName":"BOUCHRA","consigneePhone":"11231234566","consigneeCountry":"NL","consigneeState":"Germany","consigneeCity":"Marl","consigneeDistrict":"Marl","consigneeAddr1":"Allensteiner Str. 11","consigneeZipCode":"45770","sellerFullName":"Jackie Chan","sellerPhone":"12345678911","sellerCountry":"CN","sellerState":"BEIJING","sellerCity":"BEIJING","sellerDistrict":"BEIJING","sellerAddr1":"fahuoren dizhiyi","sellerZipCode":"123456","lastMileServiceCode":"IMX","packageHeight":6.91,"packageLength":6.91,"packageTotalValue":6.91,"currency":"EUR","packageTotalWeight":2000.00,"packageWidth":5.00,"battery":0,"incoterm":0,"itemInfoList":[{"sku":"1611553510699","skuDesc":"CCEI-Test3","skuDescCn":"CCEI-Test3","skuValue":6.91,"currency":"EUR","quantity":1,"skuWeight":10.00,"hscode":"010000","link":"www.ebay.com"}]}]}}'
 #     print(
 #         qqq.get_deal_params_with_desc("test", test, 'data.hoauBagId.value=null'),

@@ -12,6 +12,9 @@ from flask import jsonify
 from case.rdc_flow import get_rdc_interface
 from commonfunc.get_regular import GetRegular
 import json
+from werkzeug.utils import secure_filename
+from case.check_sql import CheckSql
+from commonfunc.datetime_tool import DateTimeTool
 
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
@@ -65,6 +68,19 @@ def get_regular():
         except Exception as e:
             result = {"error": "正则匹配方法出错啦！"}
         return Response(json.dumps(result), mimetype='application/json')
+
+
+@app.route('/getCheckPro', methods=['POST'])
+def get_check_pro():
+    check_file = request.files["check_file"]
+    if check_file == "":
+        result = {"error": "请确认参数正确"}
+    else:
+        filename = rootPath + "\\data\\sql_data\\" + DateTimeTool.get_now_date() + secure_filename(check_file.filename)
+        check_file.save(filename)
+        check = CheckSql(filename)
+        result = {"result": check.check_all()}
+    return Response(json.dumps(result), mimetype='application/json')
 
 
 app.run(host='0.0.0.0', port=8899, debug=True)

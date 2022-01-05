@@ -172,6 +172,7 @@ class GenerateTrackingNumber(object):
             tracking_number_list.append(tracking_number)
             OCSqlStatement(env).update_num(tracking_number, "test_ZL", flow_num)
             logger.info("生成为头程号段为 : %s" % tracking_number)
+            logger.info("生成为头程号段为 : %s" % tracking_number)
             logger.info("生成为订单号为 : %s" % flow_num)
         return tracking_number_list
 

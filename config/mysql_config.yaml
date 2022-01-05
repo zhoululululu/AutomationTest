@@ -132,34 +132,45 @@ hk_pre:
   password: "test123"
   database: "scorpio_prehk"
 
-pro:
-  host: "10.39.232.61"
-  port: 3307
-  user: "scorpio"
-  password: "test123"
-  database: "scorpio_prehk"
 
 pro_oc:
   host: "10.238.30.20"
   port: 3307
-  user: "test_read"
-  password: "B4FBE5D0EEBF64595FC022134B"
+  user: "azure_read"
+  password: "HGG464M187DD4"
   database: "aquarius"
-  ssh_host: "139.219.187.236"
-  ssh_port: 22
-  ssh_user: "appman"
-  ssh_password: "ZU$O%RGk&ApElAw51k"
 
 pro_dg:
   host: "10.37.14.10"
   port: 3307
   user: "scor_sel"
-  password: "2FA31AE3D5113A080C0B8E"
+  password: "pass@oc.com"
   database: "scorpio"
 
 pro_jx:
   host: "10.30.30.21"
   port: 3307
   user: "scorjx_read"
-  password: "A9FFC868C40F3CD42318B0"
+  password: "753159jxsel"
   database: "scorpio_prodjx"
+
+pro_hk:
+  host: "10.31.40.10"
+  port: 3307
+  user: "scor_sel"
+  password: "pass@oc.com"
+  database: "scorpio"
+
+pro_taurus:
+  host: "10.30.30.15"
+  port: 3307
+  user: "azure_read"
+  password: "HGG464M187DD4"
+  database: "taurus"
+
+pro_gemini:
+  host: "10.31.40.11"
+  port: 3307
+  user: "azure_read"
+  password: "HGG464M187DD4"
+  database: "gemini"
