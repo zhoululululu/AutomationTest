@@ -2,85 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d34543fb-c66b-4577-9057-3caa5111dbd0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/case/special_case_for_mawb.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/jitu/jt-order.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/jitu/jt-sg-order.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mawb/jitu-mawb.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mawb/mawb-order.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mawb/mawb.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sql_data/sql_data.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sql_data/sql_data1.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/ui/xpath.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/validation/validation-case1.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest/test_mawb.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small_func/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small_func/极兔物流对接尾程.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/check_sql_statement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/provide_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/provide_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/chandao_count.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/chandao_count.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/check_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/check_sql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/generate_tracking_number.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/generate_tracking_number.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/import_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/import_order.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/rdc_flow.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/rdc_flow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/special_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/special_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commonfunc/db_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/commonfunc/db_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commonfunc/get_faker.py" beforeDir="false" afterPath="$PROJECT_DIR$/commonfunc/get_faker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commonfunc/get_regular.py" beforeDir="false" afterPath="$PROJECT_DIR$/commonfunc/get_regular.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commonfunc/handle_test_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/commonfunc/handle_test_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commonfunc/wx_robot.py" beforeDir="false" afterPath="$PROJECT_DIR$/commonfunc/wx_robot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config_json_value.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config_json_value.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/get_collect_test_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/get_collect_test_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/get_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/get_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/http_config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/http_config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/json.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/json.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/mysql_config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/mysql_config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/sorting_consignee.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/config/sorting_consignee.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/jitu/jitu-case.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/jitu/jitu-case.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/validation/validation-case.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/validation/validation-case.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytest/test_confirm.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytest/test_confirm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytest/test_validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytest/test_validation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytest/validation_scheduler.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytest/validation_scheduler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small_func/get_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/small_func/get_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small_func/setdiff.py" beforeDir="false" afterPath="$PROJECT_DIR$/small_func/setdiff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/sql_statement.py" beforeDir="false" afterPath="$PROJECT_DIR$/sql/sql_statement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/bug/bugpic/2021-11-09-bug.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/bug/bugpic/2021-11-09-bug截图_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-04_测试环境_validation_result.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-04_生产环境_validation_result.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-04_预发布环境_validation_result.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-05_测试环境_validation_error_result.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-05_测试环境_validation_result.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-05_生产环境_validation_result.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-05_预发布环境_validation_result.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-06_stage环境_validation_error_result.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-06_测试环境_validation_error_result.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-06_生产环境_validation_error_result.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-06_预发布环境_validation_error_result.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-07_stage环境_validation_error_result.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-07_测试环境_validation_error_result.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-07_生产环境_validation_error_result.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-07_预发布环境_validation_error_result.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-08_stage环境_validation_error_result.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-08_测试环境_validation_error_result.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-08_测试环境_validation_result.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-08_生产环境_validation_error_result.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-08_生产环境_validation_result.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-08_预发布环境_validation_error_result.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-08_预发布环境_validation_result.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-09_测试环境_validation_result.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-09_生产环境_validation_result.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-09_预发布环境_validation_result.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-10_测试环境_validation_error_result.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-11_stage环境_validation_error_result.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-11_测试环境_validation_error_result.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-11_测试环境_validation_result.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-11_生产环境_validation_error_result.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-11_生产环境_validation_result.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-11_预发布环境_validation_error_result.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testresults/resultfile/2021-11-11_预发布环境_validation_result.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -445,7 +367,7 @@
       <workItem from="1638154524898" duration="104823000" />
       <workItem from="1639120524605" duration="16141000" />
       <workItem from="1639736077786" duration="11403000" />
-      <workItem from="1640827364042" duration="9808000" />
+      <workItem from="1640827364042" duration="13521000" />
     </task>
     <servers />
   </component>
